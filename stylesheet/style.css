@@ -1,1 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    min-height: 100vh;
+    background: #191919;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: -14px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+
+.link-group {
+    list-style: none;
+    display: flex;
+}
+
+.link a {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.link a:hover, .link.active a {
+    opacity: 1;
+}
+
+.home-section.active .project-section.active {
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+
+}
+
+.hero-heading {
+    color: rgb(250, 246, 246);
+    font-size: 120px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.home-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30%;
+    object-fit: cover;
+
+}
+
+/* project-section */
+
+.project-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 92px 94px 95px;
+    position: relative;
+    top: 0
+}
+
+.project-heading {
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: slategray;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: antiquewhite;
+    background-clip: text;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 238px;
+    padding: 30px;
+}
+
+.project-card {
+    height: 200px;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+.project-content {
+    position: relative;
+    padding: 40px;
+    color: #fff;
+
+
+}
+
+.project-title {
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+}
+
+.project-info {
+    margin: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.project-btn-grp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project-btn {
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project-btn.live {
+    background: none;
+    border: 2px solid #fff;
+}
+
+.project-card:hover .project-img {
+    filter: blur(20px);
+}
+
+.project-card:hover .project-content {
+    opacity: 1;
+}
+
+/* about-section */
+
+.about-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 0;
+    position: relative;
+    top: 0;
+
+
+}
+
+.about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 40px;
+}
+
+.about-img-container {
+    position: relative;
+}
+
+.about-info {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.about-img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.download-cv-btn {
+    position: fixed;
+    top: 30px;
+    bottom: 20px;
+    left: 0%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.download-cv-btn:hover {
+    background: black;
+}
+
+/* Skills */
+
+.section-skills {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.skills-box:not(:last-child) {
+    margin-bottom: 25px;
+
+}
+
+.skills-box h4 {
+    font-size: 18px;
+    color: #fdfdfd;
+    font-size: 500;
+}
+
+.skills-box .skills-ilt {
+    width: 100%;
+    position: relative;
+    height: 0.4rem;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.skills-box .skills-bar {
+    background-color: #05a0dd;
+    height: 0.4rem;
+}
+
+.skills-box .front {
+    width: 75%;
+
+}
+
+
+
+.skills-box .program {
+    width: 65%;
+}
+
+
+
+
+
+.skills-box .vc {
+    width: 20%;
+}
+
+
+
+.skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.right h3 {
+    margin-bottom: 1rem;
+    color: white;
+    font-style: italic;
+}
+
+.right p {
+    margin-bottom: 2rem;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-center {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact */
+.section-contact {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.contact-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.left h2 {
+    font-size: 2rem;
+}
+
+.left p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.left div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.left div .content {
+    text-align: left;
+}
+
+.left .icon {
+    margin-right: 2rem;
+    font-size: 2.3rem;
+    color: white;
+}
+
+.form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: beige;
+    color: black;
+    position: relative;
+}
+
+.form input,
+.form textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-indent: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.form .right div {
+    display: flex;
+}
+
+.form .right div input {
+    flex: 1 1 50%;
+}
+
+.form textarea {
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-center {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-center .left {
+        text-align: left;
+    }
+
+    .left div .content h3 {
+        font-size: 1.6rem;
+    }
+
+    .left div .content span {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: #000;
+    padding: 1.6rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer p span {
+    color: white;
+}
